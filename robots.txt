@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lawenots.com/sitemap.xml
