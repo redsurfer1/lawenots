@@ -1,0 +1,22 @@
+### Legacy group type and UI in RevenueStreams.tsx
+
+From flomisma-web/components/home/RevenueStreams.tsx:
+
+Type definition (line 11):
+  type Group = 'API Service' | 'Template' | 'Hosting' | 'Legacy'
+
+Groups array (lines 14-19):
+  const groups: { id: Group; label: string }[] = [
+    { id: 'API Service', label: 'API Service' },
+    { id: 'Template', label: 'Template' },
+    { id: 'Hosting', label: 'Hosting' },
+    { id: 'Legacy', label: 'Legacy' },
+  ]
+
+Group order (line 40):
+  const groupOrder: Group[] = ['API Service', 'Template', 'Hosting', 'Legacy']
+
+Legacy-specific card styling (lines 80, 90, 97-98, 103, 108-110, 121):
+  const isLegacy = groupTag === 'Legacy'
+  const cardLegacy = rs.tag === 'Legacy'
+  ... cardLegacy used for styling (col-span-full, muted colors, etc.)

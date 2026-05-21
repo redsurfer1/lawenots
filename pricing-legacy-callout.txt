@@ -1,0 +1,15 @@
+### Legacy services callout on pricing page
+
+From flomisma-web/app/pricing/page.tsx:
+
+        <div className="mt-16 border border-white/6 bg-[#0A0A0A] p-6">
+          <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-white/30">Legacy services</p>
+          <p className="mt-2 text-sm leading-relaxed text-white/50">
+            Web hosting (domains, websites, email, databases) and code optimization are available on
+            request for existing customers.{' '}
+            <Link href="/contact" className="text-white/60 underline-offset-4 hover:text-white">
+              Contact us
+            </Link>{' '}
+            for pricing and activation.
+          </p>
+        </div>

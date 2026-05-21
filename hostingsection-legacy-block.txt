@@ -1,0 +1,21 @@
+### Legacy section on HostingSection
+
+From flomisma-web/components/home/HostingSection.tsx:
+
+        <MotionWrapper
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease, delay: 0.2 }}
+          className="mt-16 border border-white/6 bg-[#0A0A0A] p-6"
+        >
+          <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-white/30">Legacy</p>
+          <p className="mt-2 text-sm leading-relaxed text-white/50">
+            Traditional web hosting (domain registration, email hosting, managed databases) and code
+            optimization services are also available for existing customers.{' '}
+            <Link href="/contact" className="text-white/60 underline-offset-4 hover:text-white">
+              Contact us
+            </Link>{' '}
+            to activate or modify existing services.
+          </p>
+        </MotionWrapper>

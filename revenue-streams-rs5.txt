@@ -1,0 +1,14 @@
+### rs5 - Web hosting & code optimization (formerly "Legacy" in Flomisma)
+
+From flomisma-web/lib/data/revenue-streams.ts:
+
+{
+    id: 'rs5',
+    title: 'Web hosting & code optimization',
+    headline: 'Available on request for existing customers',
+    description:
+      'Domain registration, website hosting, email hosting, managed databases, and code optimization. Currently offered to a select group of customers. Not actively marketed, but fully supported.',
+    href: '/contact',
+    tag: 'Legacy',
+    bullets: ['Custom domain and email hosting', 'Managed database hosting (Postgres / MySQL)', 'Code audit and performance optimization', 'Contact us to activate or modify'],
+  },
