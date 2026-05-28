@@ -1,0 +1,16 @@
+# Lawenots
+
+> Engineering-led platform services, web design, and digital marketing — one team, one roof.
+
+## Primary pages
+
+- https://www.lawenots.com/ — Company overview
+- https://www.lawenots.com/services — Domains, hosting, databases, code audit, launch package
+- https://www.lawenots.com/web — Custom websites, UI/UX, branding, CRO
+- https://www.lawenots.com/marketing — SEO, paid ads, social media, email marketing
+- https://www.lawenots.com/about — Team background and experience
+- https://www.lawenots.com/contact — Project inquiries and quotes
+
+## Contact
+
+Use the form at https://www.lawenots.com/contact for new projects and support requests.
