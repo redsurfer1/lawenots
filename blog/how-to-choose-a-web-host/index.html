@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Choose a Web Host Without Getting Burned — Lawenots Blog</title>
+  <meta name="description" content="Uptime SLAs, backup policies, and support quality separate good hosts from ones you'll regret at 2 a.m. A practical guide from Lawenots.">
+  <link rel="canonical" href="https://www.lawenots.com/blog/how-to-choose-a-web-host/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <meta property="og:title" content="How to Choose a Web Host Without Getting Burned">
+  <meta property="og:description" content="Uptime SLAs, backup policies, and support quality separate good hosts from ones you'll regret at 2 a.m.">
+  <meta property="og:url" content="https://www.lawenots.com/blog/how-to-choose-a-web-host/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.lawenots.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-05-15">
+  <meta property="article:author" content="Lawenots Team">
+  <meta property="article:section" content="Platform">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Choose a Web Host Without Getting Burned",
+        "datePublished": "2026-05-15",
+        "author": {"@type": "Organization", "name": "Lawenots"},
+        "publisher": {"@type": "Organization", "name": "Lawenots", "url": "https://www.lawenots.com"},
+        "url": "https://www.lawenots.com/blog/how-to-choose-a-web-host/",
+        "image": "https://www.lawenots.com/og-image.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lawenots.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.lawenots.com/blog"},
+          {"@type": "ListItem", "position": 3, "name": "How to Choose a Web Host Without Getting Burned", "item": "https://www.lawenots.com/blog/how-to-choose-a-web-host/"}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" style="position:absolute;top:-100%;left:8px;padding:8px 16px;background:var(--accent-lime);color:var(--surface-950);font-family:var(--font-mono);font-size:12px;border-radius:0 0 6px 6px;z-index:200;transition:top 0.2s;">Skip to content</a>
+
+  <nav>
+    <div class="container">
+      <a href="/" style="display:flex;align-items:center;gap:10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="80" height="28" role="img" aria-label="Lawenots logo">
+          <defs>
+            <linearGradient id="nlg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#A3E635"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="4" width="28" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="36" cy="7" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="17" width="48" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="56" cy="20" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="30" width="68" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="76" cy="33" r="3" fill="#A3E635" opacity="0.8"/>
+        </svg>
+        <span style="font-family:var(--font-display);font-size:17px;font-weight:600;letter-spacing:-0.02em;color:var(--surface-100);">Lawenots</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="/services">Services</a>
+        <a href="/web">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/blog" class="nav-active">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/contact" class="nav-cta">Get a quote</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="section section-page-first">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <a href="/blog">Blog</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">How to Choose a Web Host</span>
+        </nav>
+
+        <div class="blog-post-body">
+          <div class="section-tag" style="margin-bottom:16px;">Platform</div>
+          <h1 style="font-family:var(--font-display);font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-0.02em;margin-bottom:16px;line-height:1.15;">How to Choose a Web Host Without Getting Burned</h1>
+          <p class="meta" style="margin-bottom:40px;">
+            <time datetime="2026-05-15">May 15, 2026</time> · By <a href="/about">Lawenots Team</a> · 7 min read
+          </p>
+
+          <p>Most businesses pick a web host the same way they pick a contractor — by going with whoever is cheapest or whoever shows up first in the ad results. Then they spend the next two years dealing with slow load times, unexplained downtime, and support tickets that go nowhere.</p>
+
+          <p>There's a better way. Here's what actually matters when you're evaluating a host — and the questions that separate marketing copy from reality.</p>
+
+          <h2>What "uptime guarantee" actually means</h2>
+          <p>Every host claims 99.9% uptime. Do the math: 99.9% means roughly 8.7 hours of downtime per year. That's per year, not per month. If a host can't articulate their SLA, their monitoring stack, or what compensation looks like when they miss it — walk away.</p>
+          <p>Ask for their incident history. A good host maintains a public status page with historical uptime data. If they can't produce one, their 99.9% claim is a marketing number, not a commitment.</p>
+
+          <h2>Backups: the question most businesses skip</h2>
+          <p>Ask these three questions before you sign anything:</p>
+          <ul>
+            <li>How often are backups taken, and how long are they retained?</li>
+            <li>Are backups stored on a separate system from the primary server?</li>
+            <li>Can I restore a backup myself, or do I need to open a ticket?</li>
+          </ul>
+          <p>Daily backups retained for 30 days, stored off-site, with self-service restore is the baseline. Anything less and you're one bad deploy away from a serious problem.</p>
+
+          <h2>Support quality separates good hosts from great ones</h2>
+          <p>Read the reviews specifically for support responses during outages, not general satisfaction scores. Most hosts look fine in normal conditions. The difference shows up at 2 a.m. on a Sunday when your site is down and you need someone technical on the phone — not a bot.</p>
+          <p>Test it before you commit: open a pre-sales chat with a technical question. If the response is vague, scripted, or bounced to a ticket system, that's what you'll get when it matters.</p>
+
+          <h2>Scalability: plan for success, not just survival</h2>
+          <p>Shared hosting is fine for a brochure site. The moment you have a traffic spike — a viral post, a press mention, a seasonal push — shared hosting will throttle or crash you. Know your upgrade path before you need it:</p>
+          <ul>
+            <li>Can you move to a VPS or dedicated server without migrating providers?</li>
+            <li>Does the host support auto-scaling, or do you need to provision manually?</li>
+            <li>What are the resource limits on your current plan, and how are you notified when you approach them?</li>
+          </ul>
+
+          <h2>Price vs. value: the real calculation</h2>
+          <p>The cheapest host is rarely the cheapest option when you factor in:</p>
+          <ul>
+            <li>Developer time spent on migrations when a bad host fails</li>
+            <li>Lost revenue during unplanned downtime</li>
+            <li>SEO impact from slow Core Web Vitals caused by shared-server congestion</li>
+            <li>Security cleanup costs after a breach on an under-patched server</li>
+          </ul>
+          <p>A host that costs $25/month more but gives you SSD storage, daily backups, a real SLA, and responsive support is cheaper than the $10/month host that costs you 20 hours of developer time every quarter.</p>
+
+          <h2>What we run at Lawenots</h2>
+          <p>Our hosting stack is built on SSD servers with daily automated backups, off-site retention, free SSL provisioning, and a 99.9% SLA with monitored uptime. Every account includes a direct support line — not a ticket queue. If your current host doesn't offer that baseline, it's worth a conversation.</p>
+
+          <div class="cta-block" style="margin-top:48px;">
+            <h2>Running on a host you don't fully trust?</h2>
+            <p>Tell us your current setup. We'll give you an honest assessment and a migration plan if it makes sense.</p>
+            <a href="/services" class="btn-primary">View hosting services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="legal">
+        &copy; 2026 <a href="/">Lawenots</a>. All rights reserved.
+        <span style="margin:0 8px;color:var(--surface-700);">/</span>
+        A lean team of developers and marketers, for builders
+      </div>
+      <div class="footer-links">
+        <a href="/services">Services</a>
+        <a href="/web">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="../../script.js"></script>
+</body>
+</html>

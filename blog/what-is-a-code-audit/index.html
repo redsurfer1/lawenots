@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is a Code Audit and When Do You Need One? — Lawenots Blog</title>
+  <meta name="description" content="If your site loads slowly, has unexplained errors, or hasn't been reviewed since launch — you probably need a code audit. Here's what to expect.">
+  <link rel="canonical" href="https://www.lawenots.com/blog/what-is-a-code-audit/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <meta property="og:title" content="What Is a Code Audit and When Do You Need One?">
+  <meta property="og:description" content="If your site loads slowly, has unexplained errors, or hasn't been reviewed since launch — you probably need a code audit. Here's what to expect.">
+  <meta property="og:url" content="https://www.lawenots.com/blog/what-is-a-code-audit/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.lawenots.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-04-28">
+  <meta property="article:author" content="Lawenots Team">
+  <meta property="article:section" content="Development">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "What Is a Code Audit and When Do You Need One?",
+        "datePublished": "2026-04-28",
+        "author": {"@type": "Organization", "name": "Lawenots"},
+        "publisher": {"@type": "Organization", "name": "Lawenots", "url": "https://www.lawenots.com"},
+        "url": "https://www.lawenots.com/blog/what-is-a-code-audit/",
+        "image": "https://www.lawenots.com/og-image.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lawenots.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.lawenots.com/blog"},
+          {"@type": "ListItem", "position": 3, "name": "What Is a Code Audit and When Do You Need One?", "item": "https://www.lawenots.com/blog/what-is-a-code-audit/"}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" style="position:absolute;top:-100%;left:8px;padding:8px 16px;background:var(--accent-lime);color:var(--surface-950);font-family:var(--font-mono);font-size:12px;border-radius:0 0 6px 6px;z-index:200;transition:top 0.2s;">Skip to content</a>
+
+  <nav>
+    <div class="container">
+      <a href="/" style="display:flex;align-items:center;gap:10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="80" height="28" role="img" aria-label="Lawenots logo">
+          <defs>
+            <linearGradient id="nlg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#A3E635"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="4" width="28" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="36" cy="7" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="17" width="48" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="56" cy="20" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="30" width="68" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="76" cy="33" r="3" fill="#A3E635" opacity="0.8"/>
+        </svg>
+        <span style="font-family:var(--font-display);font-size:17px;font-weight:600;letter-spacing:-0.02em;color:var(--surface-100);">Lawenots</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="/services">Services</a>
+        <a href="/web">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/blog" class="nav-active">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/contact" class="nav-cta">Get a quote</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="section section-page-first">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <a href="/blog">Blog</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">What Is a Code Audit?</span>
+        </nav>
+
+        <div class="blog-post-body">
+          <div class="section-tag" style="margin-bottom:16px;">Development</div>
+          <h1 style="font-family:var(--font-display);font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-0.02em;margin-bottom:16px;line-height:1.15;">What Is a Code Audit and When Do You Need One?</h1>
+          <p class="meta" style="margin-bottom:40px;">
+            <time datetime="2026-04-28">Apr 28, 2026</time> · By <a href="/about">Lawenots Team</a> · 6 min read
+          </p>
+
+          <p>A code audit is a systematic review of an existing codebase — not to build new features, but to understand the current state of what you have. It surfaces security vulnerabilities, performance bottlenecks, maintainability problems, and technical debt that accumulates quietly over years of development.</p>
+
+          <p>Most businesses commission one of two ways: proactively, before something goes wrong, or reactively, after something already has. Proactive audits are cheaper. Here's how to know which situation you're in.</p>
+
+          <h2>What a code audit actually covers</h2>
+          <p>A thorough audit reviews the codebase across four dimensions:</p>
+          <ul>
+            <li><strong>Security</strong> — exposed credentials, SQL injection vectors, outdated dependencies with known CVEs, improper authentication flows, unvalidated user input.</li>
+            <li><strong>Performance</strong> — N+1 database queries, missing indexes, unoptimized assets, memory leaks, inefficient loops, render-blocking resources.</li>
+            <li><strong>Maintainability</strong> — code duplication, untested critical paths, inconsistent patterns, missing documentation on non-obvious logic, dead code that creates confusion.</li>
+            <li><strong>Infrastructure fit</strong> — whether the deployment configuration, environment variables, caching strategy, and database setup match what the application actually needs at its current scale.</li>
+          </ul>
+          <p>The output is a prioritized findings report — not just a list of problems, but a ranked remediation plan that separates critical fixes from improvements that can wait.</p>
+
+          <h2>Five signs you need one now</h2>
+          <p>Any one of these is a reason to get an audit on the calendar:</p>
+          <ul>
+            <li>Your site or application loads noticeably slower than it did a year ago with no clear explanation.</li>
+            <li>You've had an unexplained outage, data inconsistency, or security incident in the last 12 months.</li>
+            <li>The original developer is gone and no one currently on the team fully understands how the application works.</li>
+            <li>You're planning a significant feature build or traffic event and want to know what might break under load.</li>
+            <li>Your codebase hasn't had a dependency update pass in over six months — unpatched packages are an active attack surface.</li>
+          </ul>
+
+          <h2>What you'll receive as a deliverable</h2>
+          <p>A credible code audit ends with a written report, not just a verbal debrief. That report should include:</p>
+          <ul>
+            <li>An executive summary usable by non-technical stakeholders</li>
+            <li>A severity-ranked findings list (critical / high / medium / low)</li>
+            <li>Specific file and line references for each finding</li>
+            <li>Recommended remediation for each issue, with rough effort estimates</li>
+            <li>A prioritized roadmap that distinguishes what to fix immediately from what to schedule</li>
+          </ul>
+          <p>If the audit you're considering doesn't include specific line-level findings, it's a review — not an audit. The specificity is what makes it actionable.</p>
+
+          <h2>How to prepare before the audit starts</h2>
+          <p>You'll get more value in less time if you come in organized. Before work begins:</p>
+          <ul>
+            <li>Provide repository access and a working local setup or staging environment</li>
+            <li>Document known pain points — slow pages, recurring errors, anything that's been on the "we should fix this someday" list</li>
+            <li>Share any existing documentation, even if it's incomplete or out of date</li>
+            <li>Clarify the scope — a full application audit is different from a targeted performance or security review</li>
+          </ul>
+          <p>Targeted audits — "why is this checkout flow slow?" or "is our authentication implementation safe?" — are faster and cheaper than full-codebase reviews, and often the right starting point if you've never done one before.</p>
+
+          <h2>How often should you audit?</h2>
+          <p>For most small to mid-sized applications: once at launch if you inherited someone else's code, and once a year thereafter for anything customer-facing with real data. Applications processing payments, personal data, or health information warrant more frequent reviews — at minimum when major dependencies change or the team composition shifts significantly.</p>
+
+          <div class="cta-block" style="margin-top:48px;">
+            <h2>Not sure what shape your codebase is in?</h2>
+            <p>We do targeted and full-scope audits with a written findings report and a clear remediation plan. Flat fee, no retainer required.</p>
+            <a href="/services" class="btn-primary">View code audit pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="legal">
+        &copy; 2026 <a href="/">Lawenots</a>. All rights reserved.
+        <span style="margin:0 8px;color:var(--surface-700);">/</span>
+        A lean team of developers and marketers, for builders
+      </div>
+      <div class="footer-links">
+        <a href="/services">Services</a>
+        <a href="/web">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="../../script.js"></script>
+</body>
+</html>
