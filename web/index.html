@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawenots Web — Design, build, and host under one roof</title>
+  <meta name="description" content="Full-stack web presence — web development, UI/UX, branding, logo design, and CRO. Built and hosted by Lawenots.">
+  <link rel="canonical" href="https://lawenots.com/web">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:title" content="Lawenots Web — Design, build, and host under one roof">
+  <meta property="og:description" content="Full-stack web presence — designed, built, and hosted under one roof so nothing falls through the cracks.">
+  <meta property="og:url" content="https://lawenots.com/web">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lawenots.com/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" style="position: absolute; top: -100%; left: 8px; padding: 8px 16px; background: var(--accent-lime); color: var(--surface-950); font-family: var(--font-mono); font-size: 12px; border-radius: 0 0 6px 6px; z-index: 200; transition: top 0.2s;">Skip to content</a>
+
+  <nav>
+    <div class="container">
+      <a href="/" style="display: flex; align-items: center; gap: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="80" height="28">
+          <defs>
+            <linearGradient id="nlg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#A3E635"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="4" width="28" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="36" cy="7" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="17" width="48" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="56" cy="20" r="3" fill="#A3E635" opacity="0.8"/>
+          <rect x="0" y="30" width="68" height="6" rx="3" fill="url(#nlg)" opacity="0.9"/>
+          <circle cx="76" cy="33" r="3" fill="#A3E635" opacity="0.8"/>
+        </svg>
+        <span style="font-family: var(--font-display); font-size: 17px; font-weight: 600; letter-spacing: -0.02em; color: var(--surface-100);">Lawenots</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="/#services">Services</a>
+        <a href="/web" class="nav-active">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a href="/#contact" class="nav-cta">Get a quote</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero page-hero">
+      <div class="container">
+        <div class="animate-fade-in" style="max-width: 720px;">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Lawenots Web
+          </div>
+          <h1>We Build It. We Host It. We Own the <span>Outcome.</span></h1>
+          <p>
+            Full-stack web presence — designed, built, and hosted under
+            one roof so nothing falls through the cracks.
+          </p>
+          <div class="hero-buttons">
+            <a href="/#contact" class="btn-primary">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Services</div>
+          <h2>Web &amp; design, end to end</h2>
+          <p class="section-subtitle">
+            From first wireframe to post-launch optimization — every service pairs
+            with Lawenots infrastructure when you need it.
+          </p>
+        </div>
+
+        <div class="services-grid services-grid-5">
+          <div class="service-card animate-slide-up delay-1">
+            <div class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive, scalable websites built for performance and longevity.</p>
+            <div class="bullet-list">
+              <span>Pairs with Lawenots hosting for a seamless, single-vendor setup</span>
+            </div>
+          </div>
+
+          <div class="service-card animate-slide-up delay-2">
+            <div class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-2.21-1.79-4-4-4s-4 1.79-4 4c0 .742.18 1.44.5 2.06M14.47 16.122a3 3 0 015.78 1.128 2.25 2.25 0 002.4 2.245 4.5 4.5 0 00-8.4-2.245c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .742-.18 1.44-.5 2.06"/>
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Intuitive interfaces designed for usability and conversion.</p>
+            <div class="bullet-list">
+              <span>Every layout decision is tied to a measurable user outcome</span>
+            </div>
+          </div>
+
+          <div class="service-card animate-slide-up delay-3">
+            <div class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+              </svg>
+            </div>
+            <h3>Branding &amp; Identity</h3>
+            <p>Brand strategy, visual identity, and positioning.</p>
+            <div class="bullet-list">
+              <span>Built for businesses starting fresh or growing past their current brand</span>
+            </div>
+          </div>
+
+          <div class="service-card animate-slide-up delay-4">
+            <div class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/>
+              </svg>
+            </div>
+            <h3>Logo Design</h3>
+            <p>Custom logos that work across digital and print.</p>
+            <div class="bullet-list">
+              <span>Delivered with full usage rights and source files</span>
+            </div>
+          </div>
+
+          <div class="service-card animate-slide-up delay-4">
+            <div class="icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+              </svg>
+            </div>
+            <h3>CRO &amp; Landing Pages</h3>
+            <p>A/B testing, heatmap analysis, and high-converting page design.</p>
+            <div class="bullet-list">
+              <span>Turn existing traffic into more revenue without increasing ad spend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Why Lawenots Web</div>
+          <h2>Built different on purpose</h2>
+        </div>
+        <div class="why-grid">
+          <div class="bullet-list">
+            <span>Built and hosted under one roof — no vendor finger-pointing</span>
+            <span>Engineering-first execution — no bloat, no templates, no shortcuts</span>
+            <span>Every build is documented, tested, and yours to own</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Process</div>
+          <h2>How we work</h2>
+          <p class="section-subtitle">
+            A clear framework from discovery through post-launch optimization.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <h3>Discovery</h3>
+            <p>We learn your goals, audience, and existing stack.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <h3>Strategy</h3>
+            <p>We scope the build with clear deliverables and timelines.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <h3>Build &amp; Launch</h3>
+            <p>We execute fast, with full tracking from day one.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">04</div>
+            <h3>Optimize</h3>
+            <p>We iterate based on real user data post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-block">
+          <h2>Ready to build something that lasts?</h2>
+          <p>Tell us what you need. We'll get back to you within 24 hours.</p>
+          <a href="/#contact" class="btn-primary">Get a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="legal">
+        &copy; 2026 <a href="/">Lawenots</a>. All rights reserved.
+        <span style="margin: 0 8px; color: var(--surface-700);">/</span>
+        Built by engineers, for builders
+      </div>
+      <div class="footer-links">
+        <a href="/#services">Services</a>
+        <a href="/web">Web</a>
+        <a href="/marketing">Marketing</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="../script.js"></script>
+</body>
+</html>
